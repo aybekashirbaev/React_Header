@@ -1,0 +1,66 @@
+.navbar-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px 30px;
+    width: 100%;
+    .logo{
+        font-size: 1.6rem;
+    }
+    nav ul {
+        display: flex;
+        li{
+            list-style-type: none;
+            padding: 10px;
+            .link{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2rem;
+                padding: 0 10px;
+                &:hover{
+                    background: #333;
+                    padding: 30px 10px;
+                }
+            }
+        }
+    }
+    .hamburger{
+        display: none;
+    }
+    @media only screen and (max-width:920px){
+        &{
+            nav{
+                position: absolute;
+                width: 100%;
+                height: 80%;
+                background-color: #333;
+                left: 0;
+                top: 68px;
+                text-align: center;
+                padding :50px 0;
+                display: none;
+                ul{
+                    position: relative;
+                    display: inline;
+                    padding-top: 30px;
+                    li{
+                        padding: 15px;
+                        .link{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .navigation.active{
+                display: block;
+            }
+            .hamburger{
+                display: block;
+                color: rgb(255, 253, 253);
+            }
+        }
+    }
+}
